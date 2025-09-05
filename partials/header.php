@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . '/../config.php'; ?>
 <?php
-  // 页面变量兜底
+  
   $page_title = $page_title ?? $SITE_NAME;
   $page_desc  = $page_desc  ?? "The Networking of Wireless Information Systems, NetWIS, laboratory led by Dr. Wenye Wang...";
   $active     = $active     ?? '';
@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= htmlspecialchars($page_title) ?></title>
   <meta name="description" content="<?= htmlspecialchars($page_desc) ?>">
-  <!-- 样式（保持你原路径） -->
+  
   <link rel="stylesheet" type="text/css" href="<?= asset('2207NetWisLabfiles/application.css') ?>">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="<?= asset('2207NetWisLabfiles/nanogallery.min.css') ?>">

@@ -1,5 +1,5 @@
 <?php /* footer.php */ ?>
-    <!-- 页脚 (放在 .main 内部，保持与原HTML一致) -->
+    
     <div class="footer" id="footer">
       <p class="copyright">
         Copyright ©2022 North Carolina State University.
@@ -10,7 +10,7 @@
 
   </div> <!-- end .main -->
 
-  <!-- 左侧侧栏 -->
+  
   <div class="aside aside--left">
     <div class="menu">
       <!-- Research -->
@@ -94,14 +94,13 @@
     </div>
   </div> <!-- end .aside--left -->
 
-  <!-- 右侧侧栏 -->
- <!-- 右侧 aside：News（同步展示最新两条） -->
+ 
   <div class="aside aside--right">
     <h5 data-icon="" class="aside--title">News</h5>
 
     <div class="short-news">
       <?php
-        // 读取同一份新闻数据
+        
         $news = require __DIR__ . '/../data/news.php';
         usort($news, function($a, $b) { return strcmp($b['date'], $a['date']); });
         $top2 = array_slice($news, 0, 2);
@@ -126,7 +125,7 @@
   </div> <!-- end .aside--right -->
 </div> <!-- end .wrapper -->
 
-<!-- JS：保持原始顺序 -->
+
 <script src="<?= asset('2207NetWisLabfiles/jquery.min.js') ?>"></script>
 <script src="<?= asset('2207NetWisLabfiles/flowtype.js') ?>"></script>
 <script src="<?= asset('2207NetWisLabfiles/jquery.nanogallery.min.js') ?>"></script>
@@ -143,7 +142,7 @@
   ga('send', 'pageview');
 </script>
 
-<!-- 确认标记：看到这行注释说明 footer.php 已成功加载 -->
+
 <!-- footer loaded -->
 </body>
 </html>

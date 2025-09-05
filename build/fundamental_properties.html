@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<!-- 2025-09-05 07:09:12 -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamental Properties – NetWIS Lab</title>
+  <meta name="description" content="Research on dynamics, mobility, topology, and performance in wireless networks.">
+  
+  <link rel="stylesheet" type="text/css" href="2207NetWisLabfiles/application.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="2207NetWisLabfiles/nanogallery.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header"> 
+  <!-- Professor photos and contact infos -->
+  <div class="header__item header__item--professor">
+    <div id="photo-header">
+      <a href="index.html" class="photo-header--figure">
+        <img src="2207NetWisLabfiles/wenye1996.jpg">
+        <p>1996 - Beijing</p>
+      </a>
+      <a href="index.html" class="photo-header--figure">
+        <img src="2207NetWisLabfiles/wenye2016.jpg">
+        <p>2016 - Raleigh</p>
+      </a>
+    </div>
+    <div>
+      <p> 
+        <span id="name-prof">Wenye Wang (王文野)</span><br>
+        <span id="prof">Professor, IEEE Fellow </span><br>
+           Electrical and Computer Engineering<br>
+           NC State University
+      </p>
+      <div class="contact-faculty">
+        <ul>
+          <li><a><span data-icon=""></span> 919-513-2549</a></li>
+          <li><a href="mailto:wwang@ncsu.edu" target="top"><span data-icon=""></span> wwang@ncsu.edu</a></li>
+          <li><a href="https://www.google.com/maps/place/Department+of+Electrical+and+Computer+Engineering/@35.772063,-78.674191,17z/data=!3m1!4b1!4m2!3m1!1s0x89acf59e741b1d09:0x3dff08db302f5df4" target="_blank"><span data-icon=""></span> 3056 Engineering Building II, 890 Oval Drive</a></li>
+          <li><a><span data-icon=""></span> schedule by emails. </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Netwis logo, navigation -->
+  <div class="header__item header__item--nav">
+    <ul>
+      <li>
+        <a href="index.html" id="logo">
+          <img src="2207NetWisLabfiles/netwis2.png" width="100">
+        </a>
+      </li>
+      <li class=""><a href="people.html">People</a></li>
+      <li class=""><a href="gallery.html">Gallery</a></li>
+      <li class=""><a href="faqs.html">FAQs</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper" style="padding-top: 164px;"> <!-- container for main content and aside -->
+  <div class="main"> <!-- container for main content -->
+
+<div id="fundamental-properties" class="expandable_naration">
+  <h2>Fundamental Properties</h2>
+  <p>
+    The understanding of dynamics and randomness in mobile wireless networks can enable revolutionary versus evolutionary advances in the design and performance of a network.
+    Our group is committed to the discovery, modeling, and investigation of basic properties, interaction among different network dynamics and requirements, with an emphasis on node mobility,
+    routing operation, network topology, and performance. In particular, our efforts are being placed on developing new models of user mobility/profiles, which present the most challenges in wireless networks.
+    Areas of current research interest include the following:
+  </p>
+
+  <h4>Mobility Modeling and Characterization</h4>
+  <div class="research-content">
+    <p>
+      Mobility modeling is a fundamental issue in wireless mobile networks, which has a significant impact on research areas, such as routing protocol design, network performance evaluation,
+      link and path lifetime analysis, network connectivity study and network topology control. Therefore, we are actively working on how to design a mobility model which can effectively mimic
+      smooth transient moving behaviors of mobile nodes and have the desired steady state properties, such as stable node speed and uniform node distribution, is a challenging issue.
+      We aim to design a mobility model which can i) achieve the above goals, ii) integrate a variety of nice properties of existing mobility models and iii) be flexible to mimic the realistic network scenarios.
+    </p>
+    <div style="text-align: center;">
+      <img src="2207NetWisLabfiles/img/mobility_modeling_1.gif" alt="Mobility Modeling" />
+    </div>
+    <p>
+      In order to provide better performance and quality of service, we develop a framework to capture user mobility profile (UMP) which is a combination of historic records and predictive patterns
+      of mobile terminals and to estimate service patterns and locations of mobile users, including descriptions of location, mobility, and service requirements.
+      We aimed to develop new mobility model to characterize not only stochastic behaviors, but historical records and predictive future locations of mobile users as well,
+      that is, to incorporate aggregate history and current system parameters to acquire UMP.
+      We are also interested in the characterization of mobility uncertainty and its impact on network topology.
+    </p>
+    <h5>Publications</h5>
+    <ol>
+      <li>Ming Zhao and Wenye Wang, "A Unified Mobility Model for Analysis and Simulation of Mobile Wireless Networks," submitted for journal publications, December 2006.</li>
+      <li>Ming Zhao and Wenye Wang, "A Novel Semi-Markov Smooth Mobility Model for Mobile Ad Hoc Networks," in Proc. of IEEE GLOBECOM'06, (Best Paper Award), San Francisco, CA, Nov. 2006.</li>
+      <li>Ian F. Akyildiz and Wenye Wang, "A Predictive User Mobility Profile Framework for Wireless Multimedia Networks," in IEEE/ACM Transactions on Networking, vol. 12, no. 6, pp. 1021-1035, Dec. 2004.</li>
+    </ol>
+    <button class="collapse-button"><span data-icon=""> Collapse</span></button>
+  </div>
+
+  <h4>Link and Path Dynamics in Multihop Networks</h4>
+  <div class="research-content">
+    <p>
+      Understanding the link and path stochastic properties can greatly help researchers design mobility-resilient MANETs, maximize routing performance, optimize topology control, and achieve the desired network performance.
+    </p>
+    <img src="2207NetWisLabfiles/img/link_dynamics3.gif" alt="Link and Path Dynamics" />
+    <p>
+      We are focused on developing new models to study link and path properties under the circumstances such as varying radio link conditions, node mobility, geographical constraints, and interferences.
+      In particular, we aim to study probabilistic and statistical properties of link/path lifetime, link/path reliability in the presence of node or link failures due to radio channels and node mobility.
+      Currently, we are developing an analytical model of the reliability problem in wireless ad hoc networks, as well as algorithms for computing two-terminal reliability in mobile ad hoc networks.
+    </p>
+    <h5>Publications</h5>
+    <ol>
+      <li>Ming Zhao and Wenye Wang, "Analyzing Topology Dynamics in Ad Hoc Networks Using A Smooth Mobility Model," in Proc. of IEEE WCNC, March 2007.</li>
+      <li>Shawqi Kharbash and Wenye Wang, "Computing Two-Terminal Reliability in Mobile Ad hoc Networks," in Proc. of IEEE WCNC, March 2007.</li>
+    </ol>
+    <button class="collapse-button"><span data-icon=""> Collapse</span></button>
+  </div>
+
+  <h4>Node Behavior and Network Topology</h4>
+  <div class="research-content">
+    <p>
+      Compared with wired network, wireless ad hoc networks are more vulnerable to malicious attacks as well as failures due to their unique features, such as constrained energy, error-prone communication media and highly dynamic network topology.
+      Especially, every node (or end user) may have quite different “social” behaviors. For example, selfish nodes refuse to forward packets for other nodes in order to save their own energy.
+      While, with no intention for energy-saving, malicious nodes may launch all kinds of denial-of-service (DoS) attacks by replaying, reordering or/and dropping packets from time to time, and even by sending fake routing messages.
+    </p>
+    <img src="2207NetWisLabfiles/img/node-isolation.jpg" alt="Node Isolation" />
+    <p>
+      As we known, the cooperation of mobile nodes is critical to the normal operation of multi-hop wireless networks, thus all aforementioned misbehaviors have prompted open challenges to many issues,
+      such as protocol design, service availability, and topology management, in mobile ad hoc networks.
+      Therefore, we are investigating node behaviors in order to design a general node model so that we can have an in-depth understanding on the evolution of different node behaviors and their impact to network survivability.
+      The modeling and analysis of node behaviors will yield new insights into the analysis and design of resilient wireless multi-hop networks.
+    </p>
+    <h5>Publications</h5>
+    <ol>
+      <li>Fei Xing and Wenye Wang, "On the survivability of Wireless Ad Hoc Networks in the Presence of Routing Malfunction," in preparation for journal submission. April 2007.</li>
+      <li>Fei Xing and Wenye Wang, "Modeling and Analysis of Connectivity in Mobile Ad Hoc Networks with Misbehaving Nodes," in Proc. of IEEE ICC'07, Vol. 4, pp. 1879-1884, June 2006.</li>
+    </ol>
+    <button class="collapse-button"><span data-icon=""> Collapse</span></button>
+  </div>
+
+  <h4>Interaction of Protection and Performance</h4>
+  <div class="research-content">
+    <p>
+      Rapid and widespread deployment of Wireless Local Area Networks (LANs) offers great convenience to access the Internet via wireless devices such as laptops and PDAs.
+      However, wireless LANs are vulnerable to malicious attacks due to their shared medium in unlicensed frequency spectrum. Therefore, strong security features are required for a variety of applications in wireless LANs.
+      Unfortunately, secure communications are not gained for free in wireless networks because all security protocols require transmission of users' credentials for identity verification, control messages,
+      as well as data encryption/decryption which cause degradation in quality of service (QoS).
+      In addition, with the increasing demand for mobile applications, while security protocols are expected to be an integral part of network protocols,
+      they should not undermine the usage of wireless networks because of their effects on system performance.
+      Therefore, our focus is to investigate, via modeling, analysis, and experiments, to what extent system performance can be impacted by security protocols with respect to mobility scenarios, heterogeneous networks, and different applications.
+    </p>
+    <h5>Publications</h5>
+    <ol>
+      <li>Avesh K. Agarwal and Wenye Wang, "On the Impact of Quality of Protection in Wireless Local Area Networks with IP Mobility," in ACM-Springer MONET Journal, Vol. 12, No. 1, pp. 93-110, Feb. 2007.</li>
+      <li>Wenye Wang, Wei Liang, and Avesh K. Agarwal, "Integration of Authentication and Mobility Management in Third Generation and WLAN Data Networks", in WCMC, Vol. 5, Issue 6, pp. 665-678, Sept. 2005.</li>
+      <li>Wei Liang, Wenye Wang, "A Quantitative Study of Authentication and QoS in Wireless IP Networks," in Proc. of IEEE INFOCOM'05, March 2005.</li>
+    </ol>
+    <button class="collapse-button"><span data-icon=""> Collapse</span></button>
+  </div>
+</div>
+
+    
+    <div class="footer" id="footer">
+      <p class="copyright">
+        Copyright ©2022 North Carolina State University.
+        All Right Reserved. Questions? Contact
+        <a href="mailto:wwang@ncsu.edu">Dr. Wenye Wang</a>
+      </p>
+    </div>
+
+  </div> <!-- end .main -->
+
+  
+  <div class="aside aside--left">
+    <div class="menu">
+      <!-- Research -->
+      <div class="menu__item" style="position: relative;">
+        <a href="research.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Research</span>
+          </div></div>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="research.html">Overview</a></li>
+          <li><a href="fundamental_properties.html">Fundamental Properties</a></li>
+          <li><a href="design_optimization.html">Design &amp; Optimization</a></li>
+          <li><a href="systems_applications.html">Systems &amp; Applications</a></li>
+        </ul>
+      </div>
+
+      <!-- Publications -->
+      <div class="menu__item" style="position: relative;">
+        <a href="publications.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Publications</span>
+          </div></div>
+        </a>
+      </div>
+
+      <!-- Downloads -->
+      <div class="menu__item" style="position: relative;">
+        <a href="downloads.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Downloads</span>
+          </div></div>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="downloads.html">Overview</a></li>
+          <li><a href="mobility_model.html">Mobility Model</a></li>
+          <li><a href="step2_wlans.html">STEP2 in WLANs</a></li>
+          <li><a href="sensor_networks.html">Sensor Networks</a></li>
+          <li><a href="multihop_networks.html">Multihop Networks</a></li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="menu__item" style="position: relative;">
+        <a href="projects.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Projects</span>
+          </div></div>
+        </a>
+      </div>
+    </div>
+
+        <div class="services">
+      <h5 data-icon="" class="aside--title"> Recent Activities</h5>
+                              <p>2020 - Tutorial Co-Chair, Technical Program Committee, <a href="http://www.comsoc.org/conferences-events" target="_blank">IEEE ICC 2020</a></p>
+                  <p>2019 - Area Chair, Technical Program Committee, <a href="http://infocom2019.ieee-infocom.org/" target="_blank">IEEE INFOCOM</a></p>
+                  <p>2018 - Area Chair, Technical Program Committee, <a href="http://infocom2018.ieee-infocom.org/" target="_blank">IEEE INFOCOM</a></p>
+                  </div>
+
+    <a class="more-list" href="Activities.html">More activities »</a>
+
+
+    <div class="side-info side-info--aside">
+      <div class="logo">
+        <a href="http://www.ece.ncsu.edu/" target="_blank" style="font-size:16px;color:rgb(189,0,0);position:relative;top:15px;right:-5px;">
+          <img src="22-07NetWis%20Lab_files/ece.png">
+        </a>&nbsp;
+        <a href="http://www.ncsu.edu/" target="_blank">
+          <img src="22-07NetWis%20Lab_files/wolfpack1.png">
+        </a>
+      </div>
+    </div>
+  </div> <!-- end .aside--left -->
+
+ 
+  <div class="aside aside--right">
+    <h5 data-icon="" class="aside--title">News</h5>
+
+    <div class="short-news">
+      
+                        <h6>August, 2020</h6>
+          <p>Congratulations to our team on receiving an NSF award "Collaborative Research: SWIFT: LARGE: MAC-on-MAC: A Spectrum Orchestrating Control Plane for Coexisting Wireless Systems." in collaboration with Dr. Xin Wang (Stony Brook), Dr. Janise McNair, and Dr. Soumyajit Mandal (University of Florida).</p>
+                  <h6>July, 2020</h6>
+          <p>Congratulations on Rui's presentation of "U-CIMAN: Uncover Spectrum and User Information in LTE Mobile Access Networks." in IEEE INFOCOM Virtual Meeting!</p>
+                  </div>
+
+    <a class="more-list" href="News.html">More news »</a>
+
+    <div class="calendar">
+      <h5 data-icon="" class="aside--title">Our Calendar</h5>
+      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5vo32v7mr1i2ovdsng1s1gc5rc%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0" scrolling="no" width="400" height="300" frameborder="0"></iframe>
+    </div>
+  </div> <!-- end .aside--right -->
+</div> <!-- end .wrapper -->
+
+
+<script src="2207NetWisLabfiles/jquery.min.js"></script>
+<script src="2207NetWisLabfiles/flowtype.js"></script>
+<script src="2207NetWisLabfiles/jquery.nanogallery.min.js"></script>
+<script src="2207NetWisLabfiles/app.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77082106-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<!-- footer loaded -->
+</body>
+</html>

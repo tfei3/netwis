@@ -11,7 +11,7 @@ function pubs_load_all(): array {
     $p['selected'] = !empty($p['selected']);
   }
   unset($p);
-  // 排序：年降序，其次期刊优先
+  
   usort($pubs, function($a, $b) {
     if ($a['year'] !== $b['year']) return $b['year'] <=> $a['year'];
     $rank = ['journal'=>0,'conference'=>1,'book'=>2,'workshop'=>3];
@@ -49,17 +49,17 @@ function pubs_group_by_area(array $pubs): array {
   return $out;
 }
 
-// ---------- 渲染：与你原 HTML <div class="publications"><p>...</p></div> 一致 ----------
+
 function pubs_render_paragraphs(array $pubs, string $prefix = 'P'): string {
   if (empty($pubs)) return '<div class="publications"><p>No publications yet.</p></div>';
   $html = '<div class="publications">';
   $n = count($pubs);
   foreach ($pubs as $idx => $p) {
-    // 生成编号（与你原文一致风格：[JP-48]/[CP-122]）
+   
     $badge = strtoupper($p['type']) === 'JOURNAL' ? 'JP' : (strtoupper($p['type']) === 'CONFERENCE' ? 'CP' : $prefix);
-    // 倒序编号（可选）：这里直接用数据中的 id 来保留你原来的编号更稳妥
-    // 若你希望自动编号，可改为 $num = $n - $idx; 再拼 "[{$badge}-{$num}]"
-    $num = preg_replace('~^(?:jp|cp|bp|wp)-?~i', '', (string)$p['id']); // 从 id 提取尾号，比如 'cp-122' -> '122'
+    
+    
+    $num = preg_replace('~^(?:jp|cp|bp|wp)-?~i', '', (string)$p['id']); 
     $label = $num ? "[{$badge}-{$num}]" : "[{$badge}]";
 
     $title = htmlspecialchars($p['title']);

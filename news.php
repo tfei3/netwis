@@ -7,7 +7,7 @@
  
   $news = require __DIR__ . '/data/news.php';
   usort($news, function($a, $b) {
-    return strcmp($b['date'], $a['date']); // 新到旧
+    return strcmp($b['date'], $a['date']);
   });
 ?>
 
