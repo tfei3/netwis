@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<!-- 2025-09-05 07:13:20 -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads – NetWIS Lab</title>
+  <meta name="description" content="Downalods - Multihop Networks">
+  
+  <link rel="stylesheet" type="text/css" href="2207NetWisLabfiles/application.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="2207NetWisLabfiles/nanogallery.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header"> 
+  <!-- Professor photos and contact infos -->
+  <div class="header__item header__item--professor">
+    <div id="photo-header">
+      <a href="index.html" class="photo-header--figure">
+        <img src="2207NetWisLabfiles/wenye1996.jpg">
+        <p>1996 - Beijing</p>
+      </a>
+      <a href="index.html" class="photo-header--figure">
+        <img src="2207NetWisLabfiles/wenye2016.jpg">
+        <p>2016 - Raleigh</p>
+      </a>
+    </div>
+    <div>
+      <p> 
+        <span id="name-prof">Wenye Wang (王文野)</span><br>
+        <span id="prof">Professor, IEEE Fellow </span><br>
+           Electrical and Computer Engineering<br>
+           NC State University
+      </p>
+      <div class="contact-faculty">
+        <ul>
+          <li><a><span data-icon=""></span> 919-513-2549</a></li>
+          <li><a href="mailto:wwang@ncsu.edu" target="top"><span data-icon=""></span> wwang@ncsu.edu</a></li>
+          <li><a href="https://www.google.com/maps/place/Department+of+Electrical+and+Computer+Engineering/@35.772063,-78.674191,17z/data=!3m1!4b1!4m2!3m1!1s0x89acf59e741b1d09:0x3dff08db302f5df4" target="_blank"><span data-icon=""></span> 3056 Engineering Building II, 890 Oval Drive</a></li>
+          <li><a><span data-icon=""></span> schedule by emails. </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Netwis logo, navigation -->
+  <div class="header__item header__item--nav">
+    <ul>
+      <li>
+        <a href="index.html" id="logo">
+          <img src="2207NetWisLabfiles/netwis2.png" width="100">
+        </a>
+      </li>
+      <li class=""><a href="people.html">People</a></li>
+      <li class=""><a href="gallery.html">Gallery</a></li>
+      <li class=""><a href="faqs.html">FAQs</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper" style="padding-top: 164px;"> <!-- container for main content and aside -->
+  <div class="main"> <!-- container for main content -->
+
+<div class="expandable_naration">
+  <h2>Multihop Networks</h2>
+  <p> Ad-hoc networks, being multihop in nature, are characterized as a self-organizing system of wireless devices requiring no pre-established infrastructure. Therefore, they are being envisioned for many real-time applications, such as communications for moving vehicles as in vehicular networks, for rescue at disastrous sites and in military battlefield, and so on. Since in ad-hoc networks, intermediate nodes act as routers in forwarding messages between nodes not in communication range of each other, routing protocols play an invaluable role for data transmissions. Therefore, it becomes necessary to have better understanding of the performance of existing routing protocols for ad-hoc networks. For the same, we establish a real-time ad-hoc testbed to understand the in-depth properties of routing protocols in ad-hoc networks. </p>
+
+  <h4 id="1._Objectives">Objectives</h4>
+  <div>
+    <p>It is studied that network dynamics such as link hysteresis and node mobility in wireless ad-hoc environments lead to frequent communication failures. Due to that, routing overhead is a major hindrance to configuring real-time application, such as VoIP, in ad-hoc environment, because control packets may impose severe quality of service (QoS) degradation. Therefore, our objective is to understand the impact of varied packet sizes and hop-counts in a real-time ad-hoc network by setting-up an ad-hoc testbed. Specifically, our objective is to study how routing overhead, packet size and hop-count interact with each other, and to what extent they affect end-to-end delay and throughput. Therefore, we aim to obtain real-time measurements in different scenarios, and by using those results we aim to develop a statistical-analytic approach to studying the effects of routing protocols on delay and throughput. </p>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+  <h4 id="2._Architecture">Architecture</h4>
+  <div>
+    <p> The real-time testbed consists of various mobile devices, such as iPAQ, Sharp Zaurus, laptop and desktop machines each equipped with wireless cards, consisting different hardware and software platforms. The different types of hardware devices helps us obtaining real-time measurements which will be applicable to heterogeneous environment as well. All wireless nodes communicate in ad-hoc mode, and data streams with varied packet sizes and the testbed topologies consisting of varied number of hops are used to generate several load conditions in the experimental setup. Although, the testbed can be used to evaluate any ad-hoc routing protocol, as a case study, we study optimized link state routing (OLSR) protocol and ad-hoc on demand vector routing protocol (AODV). </p> 
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+  
+  <h4 id="3._Setup">Setup and Configuration</h4>
+  <div>
+    <p>In ad-hoc networks, link failures are generally due to node mobility and link hysteresis. To emulate link failure behavior in the indoor environment, intermediate nodes along the paths are switched on and off once every 10 seconds during data transmission among nodes. In our experiments, every scenario consists of an alternate path to continue data transmission in case of link failure events. The IPtables module is configured to achieve physical separation among nodes that are more than one-hop away by using their medium access control (MAC) addresses. In addition, the transmission rate for each wireless card has been set to 11 Mbps. Access point ID on all nodes is set to a unique value to enable them communicate in ad-hoc mode. The wirelesschannel shared by all nodes are set to 10, whereas the campus network uses wireless channel 1, to avoid interference from the campus wireless network. </p>
+
+    <h6>Hardware</h6>
+    <ul>
+      <li> Desktop: Dell PC, Pentium IV 2.6 GHZ (RHL 9, kernel version 2.4.20). <span style="font-weight: bold;"></span> </li>
+      <li> iPAQ: Intel StrongARM 206 MHx (Familiar Linux 0.6, kernel version 2.4.18-rmk3). <span style="font-weight: bold;"></span> </li>
+      <li> Sharp Zaurus: Intel XScale 400 MHz (Linux Embedix kernel version 2.4.18-rmk7-pxa3-embedix). <span style="font-weight: bold;"></span> </li>
+      <li> Dell Laptop MN: Celeron Processor 2.4GHZ (RHL 9, kernel version 2.4.20).<span style="font-weight: bold;"></span> </li>
+      <li> Wireless Cards: Netgear MA 311 802.11b, Lucent Orinoco Gold 802.11b.<span style="font-weight: bold;"></span>&nbsp;<em><small style="font-weight: bold;"><span style="font-weight: normal;"></span></small></em></li>
+    </ul>
+
+    <h6>Software </h6> 
+
+    <ul>
+      <li> Kernel AODV version 2.1 from NIST. <span style="font-weight: bold;"></span> </li>
+      <li> OLSR version 0.4.5. <span style="font-weight: bold;"></span> </li>
+      <li> IPtables for filtering packet at MAC level. <span style="font-weight: bold;"></span></li>
+      <li> Ethereal network packet analyzer. <span style="font-weight: bold;"></span> </li>
+      <li> Netperf, ttcp, Rude data transmission utilities. <span style="font-weight: bold;"></span></li>
+    </ul>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+  <h4 id="4._useful_lniks">Related Links</h4>
+  <div>
+    <ul>
+      <li> <a href="http://www.olsr.org/">OLSR </a> <span style="font-weight: bold;"></span> </li>
+      <li>  <span style="font-weight: bold;"></span><a href="http://w3.antd.nist.gov/wctg/aodv_kernel/">AODV</a> </li>
+      <li> <a href="http://familiar.handhelds.org/">Familiar Linux </a> <span style="font-weight: bold;"></span> </li>
+      <li> <a href="http://www.netfilter.org/">IPtables </a> <span style="font-weight: bold;"></span> </li>
+      <li> <a href="http://www.netperf.org/netperf/">Netperf </a> <span style="font-weight: bold;"></span> </li>
+      <li> <a href="http://www.ethereal.com/">Ethereal </a> <span style="font-weight: bold;"></span> </li>
+      <li> <a href="http://www.hping.org/">hping (Another ping utility)</a> </li>
+      <li> <a href="http://dast.nlanr.net/Projects/Iperf/"> iPerf (TCP traffic generator)</a> </li>
+      <li> <a href="http://rude.sourceforge.net/">Rude (UDP traffic generator)</a></li>
+      <li> <a href="http://www.nongnu.org/orinoco/">Orinoco device drivers</a></li>
+      <li> <a href="http://en.wikipedia.org/wiki/IPAQ/"> iPAQ device drivers</a></li>
+      <li> <a href="http://en.wikipedia.org/wiki/Sharp_Zaurus"> Sharp zaurus device drivers</a> </li>
+    </ul>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+  <h4 id="5._pubs">Publications</h4>
+  <div>
+    <ol>
+      <li> Avesh Agarwal and Wenye Wang, "<span style="font-weight: bold;">Statistical Analysis of the Impact of Routing in MANET Based on Real-Time Measurements,</span>" <span style="font-style: italic;"> in Proc. of the 14th&nbsp;International Conference on Computer Communication and Networks (ICCCN'05),</span> San Diego , California , USA , October, 2005. (<strong>Nominated for Best Paper Award</strong>)</li>
+    </ol>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+  <p>If you have any question, please feel free to contact <a href="http://www.ncsu.edu/%7Eakagarwa"> Avesh Agarwal</a>.
+
+</div>
+
+    
+    <div class="footer" id="footer">
+      <p class="copyright">
+        Copyright ©2022 North Carolina State University.
+        All Right Reserved. Questions? Contact
+        <a href="mailto:wwang@ncsu.edu">Dr. Wenye Wang</a>
+      </p>
+    </div>
+
+  </div> <!-- end .main -->
+
+  
+  <div class="aside aside--left">
+    <div class="menu">
+      <!-- Research -->
+      <div class="menu__item" style="position: relative;">
+        <a href="research.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Research</span>
+          </div></div>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="research.html">Overview</a></li>
+          <li><a href="fundamental_properties.html">Fundamental Properties</a></li>
+          <li><a href="design_optimization.html">Design &amp; Optimization</a></li>
+          <li><a href="systems_applications.html">Systems &amp; Applications</a></li>
+        </ul>
+      </div>
+
+      <!-- Publications -->
+      <div class="menu__item" style="position: relative;">
+        <a href="publications.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Publications</span>
+          </div></div>
+        </a>
+      </div>
+
+      <!-- Downloads -->
+      <div class="menu__item" style="position: relative;">
+        <a href="downloads.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Downloads</span>
+          </div></div>
+        </a>
+        <ul class="sub-menu">
+          <li><a href="downloads.html">Overview</a></li>
+          <li><a href="mobility_model.html">Mobility Model</a></li>
+          <li><a href="step2_wlans.html">STEP2 in WLANs</a></li>
+          <li><a href="sensor_networks.html">Sensor Networks</a></li>
+          <li><a href="multihop_networks.html">Multihop Networks</a></li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="menu__item" style="position: relative;">
+        <a href="projects.html" class="">
+          <div class="circle"><div class="circle__content">
+            <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Projects</span>
+          </div></div>
+        </a>
+      </div>
+    </div>
+
+        <div class="services">
+      <h5 data-icon="" class="aside--title"> Recent Activities</h5>
+                              <p>2020 - Tutorial Co-Chair, Technical Program Committee, <a href="http://www.comsoc.org/conferences-events" target="_blank">IEEE ICC 2020</a></p>
+                  <p>2019 - Area Chair, Technical Program Committee, <a href="http://infocom2019.ieee-infocom.org/" target="_blank">IEEE INFOCOM</a></p>
+                  <p>2018 - Area Chair, Technical Program Committee, <a href="http://infocom2018.ieee-infocom.org/" target="_blank">IEEE INFOCOM</a></p>
+                  </div>
+
+    <a class="more-list" href="Activities.html">More activities »</a>
+
+
+    <div class="side-info side-info--aside">
+      <div class="logo">
+        <a href="http://www.ece.ncsu.edu/" target="_blank" style="font-size:16px;color:rgb(189,0,0);position:relative;top:15px;right:-5px;">
+          <img src="22-07NetWis%20Lab_files/ece.png">
+        </a>&nbsp;
+        <a href="http://www.ncsu.edu/" target="_blank">
+          <img src="22-07NetWis%20Lab_files/wolfpack1.png">
+        </a>
+      </div>
+    </div>
+  </div> <!-- end .aside--left -->
+
+ 
+  <div class="aside aside--right">
+    <h5 data-icon="" class="aside--title">News</h5>
+
+    <div class="short-news">
+      
+                        <h6>August, 2020</h6>
+          <p>Congratulations to our team on receiving an NSF award "Collaborative Research: SWIFT: LARGE: MAC-on-MAC: A Spectrum Orchestrating Control Plane for Coexisting Wireless Systems." in collaboration with Dr. Xin Wang (Stony Brook), Dr. Janise McNair, and Dr. Soumyajit Mandal (University of Florida).</p>
+                  <h6>July, 2020</h6>
+          <p>Congratulations on Rui's presentation of "U-CIMAN: Uncover Spectrum and User Information in LTE Mobile Access Networks." in IEEE INFOCOM Virtual Meeting!</p>
+                  </div>
+
+    <a class="more-list" href="News.html">More news »</a>
+
+    <div class="calendar">
+      <h5 data-icon="" class="aside--title">Our Calendar</h5>
+      <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5vo32v7mr1i2ovdsng1s1gc5rc%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0" scrolling="no" width="400" height="300" frameborder="0"></iframe>
+    </div>
+  </div> <!-- end .aside--right -->
+</div> <!-- end .wrapper -->
+
+
+<script src="2207NetWisLabfiles/jquery.min.js"></script>
+<script src="2207NetWisLabfiles/flowtype.js"></script>
+<script src="2207NetWisLabfiles/jquery.nanogallery.min.js"></script>
+<script src="2207NetWisLabfiles/app.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77082106-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<!-- footer loaded -->
+</body>
+</html>
