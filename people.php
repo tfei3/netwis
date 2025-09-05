@@ -1,376 +1,401 @@
-<?PHP 
-	$pageName="People";
-	$pageTitle ="People";
-	include('netwis_header.php');
+<?php
+  // people.php
+  $page_title = "People – NetWIS Lab";
+  $page_desc  = "People at NetWIS Lab";
+  $active     = "people";
+  require __DIR__ . '/partials/header.php';
 ?>
-<html>
-  <head>
 
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-  </head>
-  <body>
-    <h2 style="font-weight: bold;"><small><small><small> Faculty </small></small></small></h2>
-    <table border="1" cellpadding="0" cellspacing="0">
-      <tbody>
-        <tr class="row2">
-          <td><img src="people/15Wenye.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 100px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Dr. Wenye
-              Wang</strong><br>
-            <strong>Professor</strong><br>
-            Department of Electrical and Computer Engineering<br>
-            NC State University, Raleigh, NC 27606.<br>
-            <br>
-            Education: 2002 Ph.D., Electrical and Computer Engineering,
-            Georgia
-            Institute of Technology, Atlanta, GA.<br>
-            E-mail: <a href="mailto:wwang@ncsu.edu">wwang@ncsu.edu</a><br>
-            Address: 3056 Engineering Building II, 890 Oval Drive<br>
-            Tel: 919-513-2549<br>
-            Office hours: 4:00-5:00pm on Tuesdays and 10:00-11:00am on Wednesdays, or by appointment in Spring 2013 <br>
-            <a href="http://people.engr.ncsu.edu/wwang/" target="_blank">http://people.engr.ncsu.edu/wwang/</a></td>
-        </tr>
-      </tbody>
-    </table>
+<div id="people">
 
- <h2 style="font-weight: bold;"><small><small><small> Postdoc Fellow</small></small></small></h2>
-    <table border="1" cellpadding="0" cellspacing="0">
-      <tbody>
+  <h2 class="with-icon" data-icon="">Ph.D. Students</h2>
+  <ul class="people--member">
 
-Huan Luo, 2012-Present, Ph.D., Computer Science, NC State University, 2011.<br><br>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/Mengning_selfie.jpg') ?>" alt="Mengning Li">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member"><a href="#" target="_blank" rel="noopener">Mengning Li</a></h4>
+        <h6>Ph.D. Student, 2022–current</h6>
+        <p class="email-member">
+          <a href="mailto:mli55@ncsu.edu?Subject=Hello" target="_top"><span data-icon=""></span> mli55@ncsu.edu</a>
+        </p>
+        <p class="short-bio">
+          Mengning Li joined the Ph.D. program at NCSU’s ECE department in Fall 2022. She received her Bachelor’s degree from Shanghai Jiao Tong University.
+        </p>
+      </div>
+    </li>
 
-Yi Xu, 2010-2012, Ph.D., Electrical and Computer Engineering, 2010.<br><br>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/Curtis.jpg') ?>" alt="LoyCurtis Smith">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member"><a href="#" target="_blank" rel="noopener">LoyCurtis Smith</a></h4>
+        <h6>Ph.D. Student, 2019–current</h6>
+        <p class="email-member">
+          <a href="mailto:ljsmith9@ncsu.edu?Subject=Hello" target="_top"><span data-icon=""></span> ljsmith9@ncsu.edu</a>
+        </p>
+        <p class="short-bio">
+          LoyCurtis Smith joined the PhD program at NCSU's ECE department in Spring 2019. He received his Master of Science from ECU in 2016 and his Bachelor of Science from UNCFSU in 2014.
+        </p>
+      </div>
+    </li>
 
-    <h2 style="font-weight: bold;"><small><small><small> Graduate
-            Students</small></small></small></h2>
-    <table border="1" cellpadding="0" cellspacing="0">
-      <tbody>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/teng.jpg') ?>" alt="Teng Fei">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member"><a href="#" target="_blank" rel="noopener">Teng Fei</a></h4>
+        <h6>Ph.D. Student, 2019–current</h6>
+        <p class="email-member">
+          <a href="mailto:tfei3@ncsu.edu?Subject=Hello" target="_top"><span data-icon=""></span> tfei3@ncsu.edu</a>
+        </p>
+        <p class="short-bio">
+          Teng Fei joined the Ph.D. program at NCSU's ECE department in Spring 2019. Before that, he received his Bachelor’s degree from Harbin Institute of Technology.
+        </p>
+      </div>
+    </li>
 
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/rui.jpg') ?>" alt="Rui Zou">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Rui Zou, Ph.D.</h4>
+        <h6>Ph.D. Student, 2015–2023</h6>
+        <p class="short-bio">
+          Rui Zou entered the Ph.D. program in NCSU in Fall 2015. He received his master’s degree from BUPT; his Bachelor program was co-provided by BUPT and Queen Mary University of London.
+        </p>
+      </div>
+    </li>
 
-        <tr class="row2">
-          <td><img src="people/yujin.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Yujin Li</strong><br>
-            <strong>Ph.D. Student</strong> (2009-Present)<br>
-            Department of Electrical and Computer Engineering<br>
-            NC State University, Raleigh, NC 27606.<br>
-            <br>
-            Education: 2009 M.S., Beijing Institute of Technology,
-            CHINA.<br>
-            E-mail: <a href="mailto:yli27@ncsu.edu">yli27@ncsu.edu</a><br>
-            Address: 3042 Engineering Building II, 890 Oval Drive<br>
-            Tel: 919-513-7620<br>
-            Research areas: Mobility modeling and management in
-            Opportunistic Networks<br>
-            <a href="http://www4.ncsu.edu/%7Eyli27" target="_blank">http://www4.ncsu.edu/~yli27</a></td>
-        </tr>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/yali2.jpg') ?>" alt="Yali Wang">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Yali Wang, Ph.D.</h4>
+        <h6>Ph.D. Student, 2015–2017</h6>
+        <p class="short-bio">She is currently with Huawei Co.</p>
+      </div>
+    </li>
 
-       <tr class="row2">
-          <td><img src="people/Sigit.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Sigit Pambudi</strong><br>
-            <strong>Ph.D. Student</strong> (2012-Present)<br>
-            Department of Electrical and Computer Engineering<br>
-            NC State University, Raleigh, NC 27606.<br>
-            <br>
-            Education: 2012 M.S., Yonsei University, South Korea.<br>
-            E-mail: <a href="mailto:sapambud@ncsu.edu">sapambud@ncsu.edu</a><br>
-            Address: 3042 Engineering Building II, 890 Oval Drive<br>
-            Tel: 919-513-7620<br>
-            Research areas: Modeling, topology and performance of wireless networking<br>
-            <a href="" target="_blank"></a></td>
-        </tr>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/jie.jpg') ?>" alt="Jie Wang">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Jie Wang, Ph.D.</h4>
+        <h6>Ph.D. Student, 2014–2019</h6>
+        <p class="short-bio">
+          Thesis: “Modeling and Analysis of Mobile Data Dynamics in Heterogeneous Wireless Networks.” She is currently with NC State University, Raleigh, NC.
+        </p>
+      </div>
+    </li>
 
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/sigit.jpg') ?>" alt="Sigit Pambudi">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Sigit Pambudi, Ph.D.</h4>
+        <h6>Ph.D. Student, 2012–2017</h6>
+        <p class="short-bio">
+          Thesis: “Modeling and Evaluation of Cyber-Physical Threats in Emerging Interdependent Networks.” Currently with MicroStrategy Inc., Tysons Corner, VA.
+        </p>
+      </div>
+    </li>
 
-        <tr class="row1">
-          <td><img src="people/mingkui.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Mingkui Wu</strong><br>
-            <strong>Ph.D. Student</strong> (2012-Present), PhD student<br>
-            Department of Electrical and Computer Engineering<br>
-            NC State University, Raleigh, NC 27606.<br>
-            <br>
-            Education: 2009 M.S., SouthEast University, Naijing, CHINA.<br>
-            E-mail: <a href="mailto:mwei2@ncsu.edu">mwei2@ncsu.edu</a><br>
-            Address: 3042 Engineering Building II, 890 Oval Drive<br>
-            Tel: 919-513-7620<br>
-            Research areas: Smart Grid Communications and Reliability<br>
-            <a href="http://www4.ncsu.edu/~mwei2" target="_blank">http://www4.ncsu.edu/~mwei2</a></td>
-        </tr>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/mingkui.jpg') ?>" alt="Mingkui Wei">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Mingkui Wei, Ph.D.</h4>
+        <h6>Ph.D. Student, 2011–2016</h6>
+        <p class="short-bio">
+          Thesis: “Modeling, Evaluation and Enhancement of Threats-Induced Reliability in Cyber-Physical Systems.” Currently with Sam Houston State University, TX.
+        </p>
+      </div>
+    </li>
 
-      </tbody>
-    </table>
-    <h2 style="font-weight: bold;"><small><small><small> Former
-            Members</small></small></small></h2>
-    <table border="1" cellpadding="0" cellspacing="0">
-      <tbody>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/yujin.jpg') ?>" alt="Yujin Li">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Yujin Li, Ph.D.</h4>
+        <h6>Ph.D. Student, 2009–2014</h6>
+        <p class="short-bio">
+          Thesis: “Mobility and Traffic Correlations in Device-to-Device (D2D) Communication Networks.” Currently with Google, Mountain View, CA.
+        </p>
+      </div>
+    </li>
 
- 
-      
- <tr class="row1">
-          <td><img src="people/Xiaozhou.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Xiaozhou Fang, MS</strong> (2012-2014).
-             <br>
-            <br>
-            
-          <td><img src="people/shawqi.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Shawqi Kharbash, Ph.D.</strong> (2006-2013)
-             <br>
-            <br>
-            <br>
-            Thesis: Modeling and Analysis of Wireless Networking Reliability
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/shawqi.jpg') ?>" alt="Shawqi Kharbash">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Shawqi Kharbash, Ph.D.</h4>
+        <h6>Ph.D. Student, 2006–2013</h6>
+        <p class="short-bio">
+          Thesis: “Modeling and Analysis of Wireless Networking Reliability.” Currently with NC State University, Raleigh, NC.
+        </p>
+      </div>
+    </li>
 
-          </td>
-        </tr>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/Zhuo.jpg') ?>" alt="Zhuo Lu">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Zhuo Lu, Ph.D.</h4>
+        <h6>Ph.D. Student, 2009–2013</h6>
+        <p class="short-bio">
+          Thesis: “Modeling and Evaluating the Impact of Denial-of-Service Attacks in Emerging Wireless and Mobile Applications.” Currently with University of South Florida.
+        </p>
+      </div>
+    </li>
 
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/lsun.jpg') ?>" alt="Lei Sun">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Lei Sun, Ph.D.</h4>
+        <h6>Ph.D. Student, 2007–2012</h6>
+        <p class="short-bio">
+          Thesis: “Modeling and Analysis of Performance and Topology Limits of Cognitive Radio Networks, 2012.” Currently with Cisco, RTP, NC.
+        </p>
+      </div>
+    </li>
 
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/xiang.jpg') ?>" alt="Xiang Lu">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Xiang Lu, Ph.D.</h4>
+        <h6>Ph.D. Student, 2010–2012 <br> Co-Advised with Dr. Jianfeng Ma</h6>
+        <p class="short-bio">
+          Thesis: “Secure and Reliable Communication Infrastructures towards the Smart Grid.” Currently with Institute of Information Engineering (IIE), Beijing, China.
+        </p>
+      </div>
+    </li>
 
-        <tr class="row1">
-          <td><img src="people/Zhuo.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Zhuo Lu, Ph.D.</strong> (2009-2013)
-             <br>
- IAI, Washington, DC.
-            <br>
-            <br>
-            Thesis:Modeling and Evaluating the Impact of Denial-of-Service Attacks in Emerging Wireless and Mobile Applications </td>
-          <td><img src="people/mohit.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Mohit Shah, M.S.</strong>
-            (2012-2013) <br>
-            North Carolina State University<br>
-            <br>
-            Thesis: End to End Communication Architecture and Technology Performance Evaluation :
-Ethernet and WiFi for Substation Automation Networks
-          </td>
-        </tr>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/yi.jpg') ?>" alt="Yi Xu">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Yi Xu, Ph.D.</h4>
+        <h6>Ph.D. Student, 2005–2010, <br> Postdoc (2010–2012)</h6>
+        <p class="short-bio">
+          Thesis: “Understanding the Performance and Resilience of Large-Scale Multi-Hop Wireless Networks, 2010.” Currently with Cisco, San Jose, CA.
+        </p>
+      </div>
+    </li>
 
-        <tr class="row2">
-          <td><img src="people/lsun.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Lei Sun, Ph.D.</strong>
-            (2007-2012) <br>
-            Cisco, RTP, NC<br>
-            <br>
-            Thesis: Modeling and Analysis of Performance and Topology
-            Limits of Cognitive Radio Networks, 2012 </td>
-          <td><img src="people/xiang.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Xiang Lu, Ph.D.</strong>
-            (2010-2012) <br>
-Co-Advised with Dr. Jianfeng Ma
-<br>  <br>
-             Institute of Information Engineering (IIE), Beijing, China<br>
-            <br>
-            Thesis: Secure and Reliable Communication Infrastructures towards the Smart Grid
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/1ming.jpg') ?>" alt="Ming Zhao">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Ming Zhao, Ph.D.</h4>
+        <h6>Ph.D. Student, 2004–2009</h6>
+        <p class="short-bio">
+          Thesis: “Design, Modeling, and Analysis of User Mobility and Its Impact on Multi-Hop Wireless Networks.” Currently with Cisco, RTP, NC.
+        </p>
+      </div>
+    </li>
 
-          </td>
-        </tr>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/1avesh.jpg') ?>" alt="Avesh K. Agarwal">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Avesh K. Agarwal, Ph.D.</h4>
+        <h6>Ph.D. Student, 2003–2009</h6>
+        <p class="short-bio">
+          Thesis: “Performance and Protection Management in Wireless Networks.” Currently with Red Hat, Raleigh, NC.
+        </p>
+      </div>
+    </li>
 
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/1fei.JPG') ?>" alt="Fei Xing">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Fei Xing, Ph.D.</h4>
+        <h6>Ph.D. Student, 2004–2008</h6>
+        <p class="short-bio">
+          Thesis: “Modeling, Design, and Analysis on the Resilience of Large-scale Wireless Multi-hop Networks.” Currently with Cisco, San Jose, CA.
+        </p>
+      </div>
+    </li>
 
-        <tr class="row1">
-          <td><img src="people/yi.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Yi Xu, Ph.D.</strong>
-            (2005-2010, 2010-2012, Postdoc)<br>
-            Cisco, San Jose, CA<br>
-            <br>
-            Thesis: Understanding the Performance and Resilience of
-            Large-Scale Multi-Hop
-            Wireless Networks, 2010. </td>
-          <td><img src="people/chi.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Chi Yi, M.S.</strong>
-            (2009-2011) <br>
-            Microsoft, Seattle, WA<br>
-            <br>
-            Thesis: None </td>
-        </tr>
-        <tr class="row1">
-          <td><img src="people/Haiyang.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Haiyang Zheng, MS</strong>
-            (2009-2011)<br>
-            Cisco, San Jose, CA<br>
-            <br>
-            Thesis: None </td>
-          <td><img src="people/Mohit.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Mohit Khanna, M.S.</strong>
-            (2009-2010)<br>
-            Qualcomm, San Diego, CA<br>
-            <br>
-            Thesis: Communication Challenges in FREEDM Systems, 2010. </td>
-        </tr>
-        <tr class="row2">
-          <td><img src="people/1ming.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Ming Zhao, Ph.D.</strong>
-            (2004-2009) <br>
-            Cisco, RTP, NC<br>
-            <br>
-            Thesis: Design, Modeling, and Analysis of User Mobility and
-            Its Impact on Multi-Hop Wireless Networks </td>
-          <td><img src="people/1avesh.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Avesh K.
-              Agarwal, Ph.D.</strong> (2003-2009)<br>
-            Red Hat, Raleigh, NC<br>
-            <br>
-            Thesis: Performance and Protection Management in Wireless
-            Networks </td>
-        </tr>
-        <tr class="row1">
-          <td><img src="people/1fei.JPG" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Fei Xing, Ph.D.</strong>
-            (2004-2008)<br>
-            Cisco, St. Jose, CA<br>
-            <br>
-            Thesis: Modeling, Design, and Analysis on the
-            Resilience of Large-scale Wireless Multi-hop Networks </td>
-          <td><img src="people/1nurcan.JPG" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Nurcan
-              Tezcan, Ph.D. </strong>(2004-2008)<br>
-            Intel, Portland, OR.<br>
-            <br>
-            Thesis:<a href="papers/08Tezcan-Thesis.pdf">
-              Energy-Efficient And
-              Reliable Data Transfer in Wireless Sensor Networks</a><br>
-          </td>
-        </tr>
-        <tr class="row2">
-          <td><img src="people/levi_1.gif" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Levi Mason</strong>(2007-2008)<br>
-            Cisco, RTP, NC <br>
-            <br>
-            Research areas: Mobility modeling and trace analysis.<br>
-          </td>
-          <td><img src="people/KFrye.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td><strong>Kaseima Frye</strong> (2007-2008)<br>
-            <br>
-            <br>
-            Research areas: Sensor Networks. <br>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="people/xinbing.JPG" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Xinbing Wang,
-              <a href="http://iwct.sjtu.edu.cn/Personal/xwang8/"
-                target="_blank" <="" a="">Ph.D. </a></strong><a
-              href="http://iwct.sjtu.edu.cn/Personal/xwang8/"
-              target="_blank" <="" a=""> (2001-2006)
-              Co-Advised with </a><a
-              href="http://www4.ncsu.edu/%7Edyeun" target="_blank">Dr.
-              Do Young Eun</a><br>
-            Department of Electronic Engineering Shanghai Jiaotong
-            University, Shanghai, CHINA.<br>
-            <br>
-            Thesis: Performance Analysis of TCP over Wired and Wireless
-            Networks<br>
-          </td>
-          <td><img src="people/wei.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Wei Liang,
-              Ph.D. </strong>(2001-2005)<br>
-            Cisco, San Jose, CA.<br>
-            <br>
-            Thesis:<a href="papers/05Liang-Thesis.pdf"> Design and
-              Analysis of Authentication Mechanisms in Single- and
-              Multi-Hop Wireless Networks</a><br>
-          </td>
-        </tr>
-        <tr class="row2">
-          <td><img src="people/Song.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Jung Kee
-              Song, M.S. M.S. </strong>(2003-2005)<br>
-            Samsung, Soeul, South Korea<br>
-            <br>
-            Thesis:<a href="papers/05Song-Thesis.pdf"> Performance
-              Evaluation of Handoff b etween UMTS/802.11b based on
-              Mobile IP and Stream Control Transmission Protocol
-            </a><br>
-          </td>
-          <td><img src="people/heng.jpg" alt="" style="float: left;
-              margin-right: 1em; position: relative; width: 90px;
-              height: 120px;"></td>
-          <td style="height: 140px; width: 520px;"><strong>Heng Xia,
-              M.S. </strong>(2003-2005)<br>
-            <a href="http://www4.ncsu.edu/%7Ehxia" target="_blank">NCSU,
-              Ph.D. Student </a><br>
-            <br>
-            Thesis: Effects of Medium Access Control
-            on the Capacity of Mobile Ad Hoc Networks.<br>
-          </td>
-        </tr>
-        <tr class="row1">
-          <td> <img src="people/User-Group.jpg" alt="" style="float:
-              right; margin-right: 1em; position: relative; width: 50px;
-              height: 70px;"></td>
-          <td style="height: 120px; width: 520px;"><strong>Remi
-              Scalabrini, Undergraduate Student </strong>(Summer 2004)<br>
-            <br>
-            IASTED visiting student.<br>
-            <br>
-            <strong>Jorinjit S. Gill, Graduate Student </strong>(Spring
-            2004)<br>
-            <br>
-            Graduate Research Assistant.<br>
-            <br>
-            <strong>Dechaphol Suwisisth, Undergraduate Student </strong>(Summer
-            2003)<br>
-            <br>
-            IASTED visiting student.
-            <br>
-          </td>
-          <td> <img src="people/User-Group.jpg" alt="" style="float:
-              right; margin-right: 1em; position: relative; width: 50px;
-              height: 70px;"></td>
-          <td style="height: 120px; width: 520px;"><strong>
-              Jennifer Webste
-            </strong>
-            <br>
-            <br>
-            r, Undergraduate Research Assistant (Summer 2009)
-            NSF IREE Program Participant.
-            <br>
-            <br>
-            <strong>Erica Young</strong>, Undergraduate Research
-            Assistant (Summer 2009)
-            NSF IREE Program Participant. </td>
-        </tr>
-      </tbody>
-    </table>
-    <br>
-  </body>
-</html>
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/1nurcan.JPG') ?>" alt="Nurcan Tezcan">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Nurcan Tezcan, Ph.D.</h4>
+        <h6>Ph.D. Student, 2004–2008</h6>
+        <p class="short-bio">
+          Thesis: “Energy-Efficient and Reliable Data Transfer in Wireless Sensor Networks.” Currently with Intel, Portland, OR.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/xinbing.JPG') ?>" alt="Xinbing Wang">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Xinbing Wang, Ph.D.</h4>
+        <h6>Ph.D. Student, 2001–2006 <br> Co-Advised with Dr. Do Young Eun</h6>
+        <p class="short-bio">
+          Thesis: “Performance Analysis of TCP over Wired and Wireless Networks.” Currently with Dept. of Electronic Engineering, Shanghai Jiao Tong University.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/wei.jpg') ?>" alt="Wei Liang">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Wei Liang, Ph.D.</h4>
+        <h6>Ph.D. Student, 2001–2005</h6>
+        <p class="short-bio">
+          Thesis: “Design and Analysis of Authentication Mechanisms in Single- and Multi-Hop Wireless Networks.” Currently with Cisco, San Jose, CA.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+  <h2 class="with-icon" data-icon="">M.S. Students</h2>
+  <ul class="people--member">
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/LiChen_selfie.jpg') ?>" alt="Lichen Fu">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Lichen Fu, M.S.</h4>
+        <h6>MS Student, 2021–2023</h6>
+        <p class="short-bio">Lichen Fu graduated in 2023.</p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/Xiaozhou.jpg') ?>" alt="Xiaozhou Fang">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Xiaozhou Fang, M.S.</h4>
+        <h6>MS Student, 2012–2014</h6>
+        <p class="short-bio">
+          Thesis: “Neighbor Graph Based Proactive Caching for Seamless Handover in Content-Centric Network.” Currently with NC State University.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/mohit.jpg') ?>" alt="Mohit Shah">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Mohit Shah, M.S.</h4>
+        <h6>MS Student, 2012–2013</h6>
+        <p class="short-bio">
+          Thesis: “End to End Communication Architecture and Technology Performance Evaluation: Ethernet and WiFi for Substation Automation Networks.” Currently with NC State University.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/chi.jpg') ?>" alt="Chi Yi">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Chi Yi, M.S.</h4>
+        <h6>MS Student, 2009–2011</h6>
+        <p class="short-bio">Currently with Microsoft, Seattle, WA.</p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/Haiyang.jpg') ?>" alt="Haiyang Zheng">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Haiyang Zheng, M.S.</h4>
+        <h6>MS Student, 2009–2011</h6>
+        <p class="short-bio">Currently with Cisco, San Jose, CA.</p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/MohitK.jpg') ?>" alt="Mohit Khanna">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Mohit Khanna, M.S.</h4>
+        <h6>MS Student, 2009–2010</h6>
+        <p class="short-bio">Currently with Qualcomm, San Diego, CA.</p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/Song.jpg') ?>" alt="Jung Kee Song">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Jung Kee Song, M.S.</h4>
+        <h6>MS Student, 2003–2005</h6>
+        <p class="short-bio">
+          Thesis: “Performance Evaluation of Handoff between UMTS/802.11b based on Mobile IP and SCTP.” Currently with Samsung, Seoul, Korea.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <div class="photo-member">
+        <img src="<?= asset('2207NetWisLabfiles/people/heng.jpg') ?>" alt="Heng Xia">
+      </div>
+      <div class="desc-member">
+        <h4 class="name-member">Heng Xia, M.S.</h4>
+        <h6>MS Student, 2003–2005</h6>
+        <p class="short-bio">
+          Thesis: “Effects of Medium Access Control on the Capacity of Mobile Ad Hoc Networks.” Currently with NCSU PhD Program.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+  <h2 class="with-icon" data-icon="">Former Members</h2>
+  <ul>
+    <li><p><b>Luo Huan</b>, Post-Doc 2012–2014</p></li>
+    <li><p><b>Yan Yu</b>, Visiting Scholar 2016–2017</p></li>
+    <li><p><b>Jiexiao Yu</b>, Visiting Scholar 2015–2016</p></li>
+    <li><p><b>Tan-Li Hsu</b>, Student 2015–2016</p></li>
+    <li><p><b>Levi Mason</b>, Student 2007–2008</p></li>
+    <li><p><b>Kaseima Frye</b>, Student 2007–2008</p></li>
+    <li><p><b>Jennifer Webster</b>, Undergraduate Research Assistant Summer 2009</p></li>
+    <li><p><b>Erica Young</b>, Undergraduate Research Assistant Summer 2009</p></li>
+    <li><p><b>Remi Scalabrini</b>, Undergraduate Student Summer 2004</p></li>
+    <li><p><b>Jorinjit S. Gill</b>, Graduate Research Assistant Spring 2004</p></li>
+    <li><p><b>Dechaphol Suwisisth</b>, Undergraduate Student Summer 2003</p></li>
+  </ul>
+
+</div>
+
+<?php require __DIR__ . '/partials/footer.php'; ?>
