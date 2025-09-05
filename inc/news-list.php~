@@ -1,0 +1,93 @@
+<?php
+
+function get_list_news($news_item) {
+    
+    $output = '';
+    $output = $output . '<h6>' . $news_item["date"] . '</h6>';
+    $output = $output . '<p>' . $news_item["content"] . '</p>';
+
+    return $output;
+}
+
+function get_list_shortnews($news_item) {
+    
+    $output = '';
+    $output = $output . '<h6>' . $news_item["date"] . '</h6>';
+    $output = $output . '<p>' . $news_item["short-content"] . '</p>';
+
+    return $output;
+}
+
+$news = array();
+$news[16] = array(
+    "date" => "September 12, 2014",
+    "content" => "Congratulations on Yujin Lin who has successfully passed his PhD defense on \"Mobility and Traffic Correlations in Device-to-Device (D2D) Communication Networks.\" Congratulations again, Dr. Li",
+    "short-content" => "Congratulations on Yujin Li who has successfully passed his PhD defense!"
+);
+$news[15] = array(
+    "date" => "May 8, 2013",
+    "content" => "Congratulations on Zhuo Lu who has successfully passed his PhD defense on \"Modeling and Evaluating the Impact of Denial-of-Service Attacks in Emerging Wireless and Mobile Applications.\" Congratulations again, Dr. Lu!",
+    "short-content" => "Congratulations on Zhuo Lu who has successfully passed his PhD defense!"
+);
+$news[14] = array(
+    "date" => "December 18, 2007",
+    "content" => "Avesh K. Agarwal has successfully passed his Preliminary Exam. Congratulations, Avesh!",
+    "short-content" => "Congratulations on Avesh K. Agarwal who has successfully passed his Preliminary Exam!"
+);
+$news[13] = array(
+    "date" => "November 1, 2007",
+    "content" => "Yi Xu's paper entitled \"The Speed of Information Propagation in Large Wireless Networks\" is accepted to IEEE Infocom'08. Congratulations, Yi!",
+    "short-content" => "Congratulations on Yi Xu whose paper is accepted to IEEE Infocom'08!"
+);
+$news[12] = array(
+    "date" => "November 1, 2007",
+    "content" => "Ming Zhao's paper entitled \"Joint Effects of Radio Channels and Node Mobility on Link Dynamics in Wireless Networks\" is accepted to IEEE Infocom\'08. Congratulations, Ming!",
+    "short-content" => "Ming Zhao's paper is accepted to IEEE Infocom\'08. Congratulations, Ming!"
+);
+$news[11] = array(
+    "date" => "September 17, 2007",
+    "content" => "Yi Xu has successfully passed his Qualifying Exam. Congratulations, Yi!"
+);
+$news[10] = array(
+    "date" => "September 4, 2007",
+    "content" => "Nurcan Tezcan has successfully passed her Preliminary Exam. Congratulations, Nurcan!"
+);
+$news[9] = array(
+    "date" => "December 1, 2006",
+    "content" => "Ming Zhao has received the Best Student Paper Award at IEEE GLOBECOM 2006 - Communication Networks. Congratulations, Ming!"
+);
+$news[8] = array(
+    "date" => "November 9, 2006",
+    "content" => "Fei Xing has successfully passed his Qualifying Exam. Congratulations, Fei!"
+);
+$news[7] = array(
+    "date" => "May 2, 2006",
+    "content" => "Ming Zhao has successfully passed his qualifying exam."
+);
+$news[6] = array(
+    "date" => "April 28, 2006",
+    "content" => "Nurcan Tezcan  has successfully passed her qualifying exam."
+);
+$news[5] = array(
+    "date" => "January 5, 2006",
+    "content" => "We have moved to new Engineering Building II, Centennial Campus on January 5, 2006. Our new location is 3042 EBII."
+);
+$news[4] = array(
+    "date" => "August 15, 2005",
+    "content" => "Yi Xu, a new Ph.D. student, joined the NetWIS lab."
+);
+$news[3] = array(
+    "date" => "August 10, 2005",
+    "content" => "Heng Xia defended M.S. thesis successfully."
+);
+$news[2] = array(
+    "date" => "August 5, 2005",
+    "content" => "Wei Liang defended his Ph.D. thesis successfully. Congratulations Dr. Liang! "
+);
+$news[1] = array(
+	"date" => "May 12, 2005",
+	"content" => "Jungkee Song defended M.S. thesis successfully."
+);
+
+
+?>

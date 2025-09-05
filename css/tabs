@@ -1,0 +1,113 @@
+.tabs {
+  margin-top: 10px;
+  float: right;
+  width: 400px;
+  margin-right: 10px;
+
+
+  li {
+    padding-top: 9px;
+    width: 25%;
+
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+
+    
+ background: $red;
+    height: 100%;
+    width: 100%;
+    /* Only round the top corners */
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+  }
+  .tab-title a {
+    font-size: 90%;
+    padding: 5px 10px;
+  }
+  .tab-title .active {
+    /* Highest, active tab is on top */
+    z-index: 3;
+
+    a {
+      background: $red; 
+      color: black; 
+
+    }
+  }
+  li:before, li:after, 
+  li a:before, li a:after {
+    /* All pseudo elements are 
+       abs. positioned and on bottom */
+    position: absolute;
+    bottom: 0;
+  }
+}
+.tabs .tab-title a {
+background-color: $grey;
+color: black;
+}
+.tabs .tab-title.active a {
+background-color: $red;
+color: white;
+}
+/* Only the first, last, and active
+   tabs need pseudo elements at all */
+.tabs li:last-child:after,   .tabs li:last-child a:after,
+.tabs li:first-child:before, .tabs li:first-child a:before,
+.tabs .active:after,   .tabs .active:before, 
+.tabs .active a:after, .tabs .active a:before {
+  content: "";
+}
+.tabs .active:before, .tabs .active:after {
+  background: $red; 
+  
+  /* Squares below circles */
+  z-index: 1;
+}
+$small-circle-radius: 10px;
+/* Squares */
+.tabs li:before, .tabs li:after {
+  background: $grey;
+  width: $small-circle-radius;
+  height: $small-circle-radius;
+}
+.tabs li:before {
+  left: -$small-circle-radius;      
+}
+.tabs li:after { 
+  right: -$small-circle-radius;
+}
+/* Circles */
+.tabs li a:after, .tabs li a:before {
+  width: 2*$small-circle-radius; 
+  height: 2*$small-circle-radius;
+  /* Circles are circular */
+  -webkit-border-radius: $small-circle-radius;
+  -moz-border-radius:    $small-circle-radius;
+  border-radius:         $small-circle-radius;
+  background: white;
+  
+  /* Circles over squares */
+  z-index: 2;
+}
+.tabs .active a:after, .tabs .active a:before {
+  background: $grey;
+}
+/* First and last tabs have different
+   outside color needs */
+.tabs li:first-child.active a:before,
+.tabs li:last-child.active a:after {
+  background: white;
+}
+.tabs li a:before {
+  left: -2*$small-circle-radius;
+}
+.tabs li a:after {
+  right: -2*$small-circle-radius;
+}

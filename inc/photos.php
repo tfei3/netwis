@@ -1,0 +1,49 @@
+<?php
+
+function get_list_photos($photo) {
+    
+    // $output = '';
+    // $output = $output . '<li>';
+    // $output = $output . '<figure><img src="' . $photo["src"] . '" alt="' . $photo["alt"] . '"></figure>';
+    // $output = $output . '<figcaption><p>' . $photo["caption"] . '.</p></figcaption>';
+    // $output = $output . '</li>';
+
+    $output = '';
+    $output = $output . '<li>';
+    $output = $output . '<a href="' . $photo["src"] . '">';
+    $output = $output . '<img data-caption="' . $photo["caption"] . '" src="' . $photo["src"] . '"></a>';
+    $output = $output . '</li>';
+
+    return $output;
+}
+
+
+
+$photos = array();
+$photos[6] = array(
+    "src" => "img/photos/yujin_defense_after.JPG",
+    "caption" => "NetWIS group photo after Yujin's PhD defense on Sep 12, 2014."
+);
+$photos[5] = array(
+    "src" => "http://placehold.it/1000x1000",
+    "caption" => "Tongue capicola t-bone meatloaf, andouille kielbasa strip steak drumstick kevin ground round tenderloin pork chop beef ribs corned beef ribeye."
+);
+$photos[4] = array(
+    "src" => "http://placehold.it/1000x1000",
+    "caption" => "Tongue capicola t-bone meatloaf, andouille kielbasa strip steak drumstick kevin ground round tenderloin pork chop beef ribs corned beef ribeye."
+);
+$photos[3] = array(
+    "src" => "http://placehold.it/1000x1000",
+    "caption" => "Tongue capicola t-bone meatloaf, andouille kielbasa strip steak drumstick kevin ground round tenderloin pork chop beef ribs corned beef ribeye."
+);
+$photos[2] = array(
+    "src" => "http://placehold.it/1000x1000",
+    "caption" => "Tongue capicola t-bone meatloaf, andouille kielbasa strip steak drumstick kevin ground round tenderloin pork chop beef ribs corned beef ribeye."
+);
+$photos[1] = array(
+	"src" => "http://placehold.it/1000x1000",
+	"caption" => "Tongue capicola t-bone meatloaf, andouille kielbasa strip steak drumstick kevin ground round tenderloin pork chop beef ribs corned beef ribeye."
+);
+
+
+?>
