@@ -25,6 +25,45 @@ class PHPStaticGeneratorImproved {
         }
     }
     
+    
+    private function removeDirectory($dir) {
+        if (!is_dir($dir)) {
+            return true;
+        }
+        
+        $files = scandir($dir);
+        foreach ($files as $file) {
+            if ($file === '.' || $file === '..') {
+                continue;
+            }
+            
+            $path = $dir . DIRECTORY_SEPARATOR . $file;
+            if (is_dir($path)) {
+                $this->removeDirectory($path);
+            } else {
+                unlink($path);
+            }
+        }
+        
+        return rmdir($dir);
+    }
+    
+   
+    private function prepareOutputDirectory() {
+        if (is_dir($this->outputDir)) {
+            echo "cleaning: {$this->outputDir}\n";
+            if (!$this->removeDirectory($this->outputDir)) {
+                throw new Exception("error: {$this->outputDir}");
+            }
+        }
+        
+        if (!mkdir($this->outputDir, 0755, true)) {
+            throw new Exception("error: {$this->outputDir}");
+        }
+        
+        echo "ready: {$this->outputDir}\n\n";
+    }
+    
    
     private function getAllPhpFiles() {
         $files = [];
@@ -286,7 +325,7 @@ try {
     
    
     private function copyStaticFiles() {
-        echo "\n...\n";
+        echo "\ncopy html files...\n";
         
         $staticFiles = $this->getAllStaticFiles();
         
@@ -312,18 +351,15 @@ try {
     
     
     public function generate() {
-        echo "generate html ...\n";
-        echo "ori dir: {$this->sourceDir}\n";
-        echo "output dir: {$this->outputDir}\n\n";
+        echo "generate HTML files...\n";
+        echo "input: {$this->sourceDir}\n";
+        echo "output: {$this->outputDir}\n\n";
         
-        if (!is_dir($this->outputDir)) {
-            if (!mkdir($this->outputDir, 0755, true)) {
-                throw new Exception("can not create output dir: {$this->outputDir}");
-            }
-        }
+        
+        $this->prepareOutputDirectory();
         
         $phpFiles = $this->getAllPhpFiles();
-        echo "find " . count($phpFiles) . " PHP/HTML files\n\n";
+        echo "find " . count($phpFiles) . "  PHP/HTML files\n\n";
         
         foreach ($phpFiles as $file) {
             $this->processPhpFile($file);
@@ -339,7 +375,7 @@ function main() {
     global $argv;
     
     if (count($argv) < 3) {
-        echo "usage : php render.php <origin dir> <output dir>\n";
+        echo "usage: php render.php <input> <output>\n";
         echo "example: php render.php . ../html_site\n";
         exit(1);
     }
@@ -351,10 +387,10 @@ function main() {
         $generator = new PHPStaticGeneratorImproved($sourceDir, $outputDir);
         $generator->generate();
         
-        echo "\n success\n";
+        echo "\nsuccess！\n";
         
     } catch (Exception $e) {
-        echo "wrong: " . $e->getMessage() . "\n";
+        echo "error: " . $e->getMessage() . "\n";
         exit(1);
     }
 }
@@ -362,6 +398,6 @@ function main() {
 if (php_sapi_name() === 'cli') {
     main();
 } else {
-    echo "haha\n";
+    echo "error\n";
 }
 ?>
