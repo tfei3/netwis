@@ -116,7 +116,7 @@
       <?php endif; ?>
     </div>
 
-    <a class="more-list" href="<?= $BASE_URL ?>/News.php">More news »</a>
+    <a class="more-list" href="<?= $BASE_URL ?>/news.php">More news »</a>
 
     <div class="calendar">
       <h5 data-icon="" class="aside--title">Our Calendar</h5>
